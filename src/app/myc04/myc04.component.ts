@@ -1,0 +1,16 @@
+import { Component, OnInit } from '@angular/core';
+import { NameService } from '../name.service'
+
+@Component({
+  selector: 'app-myc04',
+  templateUrl: './myc04.component.html',
+  styleUrls: ['./myc04.component.css']
+})
+export class Myc04Component implements OnInit {
+
+  constructor(protected ns: NameService) { }
+
+  ngOnInit(): void {
+  }
+
+}

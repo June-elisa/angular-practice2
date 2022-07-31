@@ -1,0 +1,7 @@
+<p>myc04 works!</p>
+<ul>
+    <li *ngFor="let item of ns.names">{{ item }}</li>
+</ul>
+<!-- 04中修改数组, 03组件也会变化 -->
+<!-- 说明是共享数据 -->
+<button (click)="ns.names.push('燕子')">添加</button>
