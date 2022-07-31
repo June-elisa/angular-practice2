@@ -1,7 +1,9 @@
 <p>myc01 works!</p>
 <h1>父子组件传值</h1>
-
 <app-son name="然然" [age]=18 [boss]="{ name: '文华', age: 33, phone: '10086' }"></app-son>
-
 <h1>定时器</h1>
 <app-clock [duration]="30" (msgEvent)="clockComplete($event)"></app-clock>
+<hr>
+<h1>掌控子元素</h1>
+<app-myc02 #abc></app-myc02>
+<button (click)="nextYear()">过了一年</button>
